@@ -1,0 +1,28 @@
+package com.practice.csvhandling;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+class ModifyCSVFileTest {
+    @Test
+    void modifyFile(){
+        String inPath = "src\\main\\resources\\employees.csv";
+        String outPath = "src\\main\\resources\\output.csv";
+        String ans="ID,Name,Department,Salary,Email,Phone no\n" +
+                "101,Abhishek Kumar,Software Engineer,80000,rajabhishek7654@gmail.com,9798345287\n" +
+                "102,Muskan Pandey,IT,112200,muskan9234@gmail.com,7079973282\n" +
+                "103,Rahul Sharma,Finance,95000,rahul.sharma@example,9876543210\n" +
+                "104,Pooja Singh,HR,75000,pooja_singh@company.com,9123456789\n" +
+                "105,Amit Verma,Sales,68000,amitverma@.com,8888899999\n" +
+                "106,Neha Rathi,Marketing,89000,neha.rathi@email.org,9000000000\n" +
+                "107,Vikram Patel,Operations,97000,vikram.patel@site,1112233\n" +
+                "108,Sneha Kapoor,IT,121000,sneha.kapoor@domain.co,9090909090\n" +
+                "109,Arjun Mehta,Engineering,105000,arjunmehta@@company.com,7070707070\n" +
+                "110,Kiran Das,Support,65000,kiran.das@domain.com,12345\n";
+
+        assertEquals(ModifyCSVFile.modifyCSVFile(inPath,outPath),ans);
+
+    }
+
+}
