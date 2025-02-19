@@ -1,7 +1,8 @@
 package com.handsonpracticeproblems.json.listobjectstojsonarray;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-
+import java.util.*;
+import java.io.*;
 public class ConvertListToJsonArray {
     public static void main(String[] args) {
         try {

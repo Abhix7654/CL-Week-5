@@ -5,6 +5,8 @@ import com.practiceproblems.json.listobjectstojsonarray.Car;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import java.util.*;
+import java.io.*;
 
 class ConvertListToJsonArrayTest {
 
